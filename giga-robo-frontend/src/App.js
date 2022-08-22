@@ -37,6 +37,29 @@ const [robots, setRobots] = useState([]);
           {robots.length > 0 && renderRobots()}
         </div>
       </div>
+      <div>
+        <h3>Master To-Do List</h3>
+        <p>This will get updated when major changes happen, and serves as a roadmap of what needs to be done. When things are more functional, this will live in the readme on github</p>
+        <h4>Site Functionallity</h4>
+        <ul>
+          <li>Make Robot Buttons</li>
+          <li>Make Pilot Buttons</li>
+          <li>Get Abilities and cards to show up when buttons are pressed</li>
+          <li>Make abilities and cards get added to a user build section when clicked</li>
+          <li>save completed builds in database</li>
+          <li>create client side validation of builds, so that we don't create builds that break the rules</li>
+          <li>add a build list page, one for all builds, and one for builds from current user</li>
+          <li>create user / password functionality</li>
+          <li>Find a good react or C# module to handle all the hairy authentication stuff for us</li>
+          <li>Maybe add more user / social functions, like favoriting builds, and adding comments? Ask Alex.</li>
+        </ul>
+        <h4>Style and Design</h4>
+        <ul>
+          <li>Make a figma layout of how the site should acutally look</li>
+          <li>make everything look cool</li>
+          <li>Add Css animations to stuff</li>
+        </ul>
+      </div>
     </div>
   );
 

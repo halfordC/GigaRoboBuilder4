@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CORSPolicy",
         builder =>
         {
-            builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000", "http://appname.azuerstaticapps.net");
+            builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000", "https://proud-pond-00959fa10.1.azurestaticapps.net");
         });
 });
 
