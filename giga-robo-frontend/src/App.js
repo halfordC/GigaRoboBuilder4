@@ -31,7 +31,6 @@ const [robots, setRobots] = useState([]);
           </div>
           <div className="mt-5">
             <button onClick={getRobots} className='btn btn-dark btn-lg w-100'>Get Robots From Server</button>
-            <button onClick={() => {}} className='btn btn-secondary btn-lg w-100 mt-4'>Create new Robot</button>
           </div>          
 
           {robots.length > 0 && renderRobots()}
