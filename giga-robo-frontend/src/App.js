@@ -46,6 +46,7 @@ const [robots, setRobots] = useState([]);
           <li>Get Abilities and cards to show up when buttons are pressed</li>
           <li>Make abilities and cards get added to a user build section when clicked</li>
           <li>save completed builds in database</li>
+          <li>Add tool-tip style card descriptions, netrunner db style</li>
           <li>create client side validation of builds, so that we don't create builds that break the rules</li>
           <li>add a build list page, one for all builds, and one for builds from current user</li>
           <li>create user / password functionality</li>
@@ -57,6 +58,7 @@ const [robots, setRobots] = useState([]);
           <li>Make a figma layout of how the site should acutally look</li>
           <li>make everything look cool</li>
           <li>Add Css animations to stuff</li>
+          <li>Add build statics and charts. Card cost histograms, type histograms, ect</li>
         </ul>
       </div>
     </div>
