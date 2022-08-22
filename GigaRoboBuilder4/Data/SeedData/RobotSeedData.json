@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "Name": "AYZN",
+    "Speed": 4,
+    "MaxArmour": 40,
+    "Defence": 2,
+    "MainImage": "holder"
+  },
+  {
+    "Id": 2,
+    "Name": "CHOGOKING",
+    "Speed": 5,
+    "MaxArmour": 40,
+    "Defence": 1,
+    "MainImage": "holder"
+  },
+  {
+    "Id": 3,
+    "Name": "DAI-RAIJIN V",
+    "Speed": 7,
+    "MaxArmour": 30,
+    "Defence": 2,
+    "MainImage": "holder"
+  },
+  {
+    "Id": 4,
+    "Name": "O-GUN",
+    "Speed": 5,
+    "MaxArmour": 45,
+    "Defence": 1,
+    "MainImage": "holder"
+  },
+  {
+    "Id": 5,
+    "Name": "SHINOKAMI",
+    "Speed": 5,
+    "MaxArmour": 35,
+    "Defence": 2,
+    "MainImage": "holder"
+  },
+  {
+    "Id": 6,
+    "Name": "ASCALON ALPHA",
+    "Speed": 6,
+    "MaxArmour": 35,
+    "Defence": 1,
+    "MainImage": "holder"
+  }
+]

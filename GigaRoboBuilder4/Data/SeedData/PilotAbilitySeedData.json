@@ -1,0 +1,170 @@
+[
+  {
+    "Id": 1,
+    "PilotId": 1,
+    "Name": "Wasteland Mechanic",
+    "Rules": "To survive, Hadrian will scrap weapons to gain the parts needed for repairs. If they are in your hand, you may remove 1/2 of of your total cards from the game to Trigger: Repair 1/4 of your robot’s Max Armor.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 2,
+    "PilotId": 1,
+    "Name": "Improvise Through Sacrifice",
+    "Rules": "Hadrian can retrofit any systems to adapt to combat. If they are in your hand, you may remove 4 of your cards from the game once to Trigger: Permanently gain Boost.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 3,
+    "PilotId": 1,
+    "Name": "Wed to Steel",
+    "Rules": "Hadrian’s cybernetics connect directly to his robot’s frame for unparalleled control. If they are in your hand, you may remove 4 of your cards from the game to Trigger: Permanently increase your Speed by 2, to a maximum of 9.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 4,
+    "PilotId": 2,
+    "Name": "Think you can stop me!?",
+    "Rules": "Takashi’s chosen robot only takes 1/2 damage from collisions.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 5,
+    "PilotId": 2,
+    "Name": "Honorable Defeat",
+    "Rules": "Even on the edge of destruction, Takashi’s tenacious spirit refuses to falter. You can only be defeated by an Attack or Effect that inflicts 4 or more damage at once.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 6,
+    "PilotId": 2,
+    "Name": "Born to fight",
+    "Rules": "Takashi’s close combat fighting skill results in his robot’s melee attacks dealing damage +1.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 7,
+    "PilotId": 3,
+    "Name": "Bleeding Edge",
+    "Rules": "Noriko can push her robot beyond its physical limits. At any time, she may permanently subtract Armor to gain an equivalent amount of Fighting Spirit.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 8,
+    "PilotId": 3,
+    "Name": "Crusade",
+    "Rules": "Noriko’s ferocious spirit can’t be contained. Her robot begins with only 3/4 of its total Armor, but her heart is permanently increased by 2.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 9,
+    "PilotId": 3,
+    "Name": "Suicide Drive",
+    "Rules": "Noriko sheds her robot’s defensive systems and puts everything into her attacks. Your robot’s Defense is permanently reduced to 0, but you always gain Power during your Upkeep.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 10,
+    "PilotId": 4,
+    "Name": "Circuit Flow",
+    "Rules": "Dash’s speed and reflexes are unmatched. Add +3 to all Recovery Roll results.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 11,
+    "PilotId": 4,
+    "Name": "Combat Logic",
+    "Rules": "Dash’s natural piloting ability reduces the cost of your Robot cards by 1 Fighting Spirit.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 12,
+    "PilotId": 4,
+    "Name": "Righteous Spirit",
+    "Rules": "Dash will do everything he can to avoid collateral damage. Any time an opponent forces you to collide with a structure, immediately increase his Rage by 3 until the end of the current turn.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 13,
+    "PilotId": 5,
+    "Name": "Logistical Prowess",
+    "Rules": "Kong gains 1 Power Token at the beginning of your turn. At the beginning of your turn you may pay 1 Fighting Spirit to place or move 1 Target Token to any unoccupied hex. Once per turn, you may spend 1 Power Token to Trigger: Move 1 card in your Cooldown Meter 1 slot.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 14,
+    "PilotId": 5,
+    "Name": "Ultimate Price",
+    "Rules": "Kong gains 1 Power Token at the beginning of your turn. At the beginning of your turn you may pay 1 Fighting Spirit to place or move 1 Target Token to any unoccupied hex. If your opponent is on a hex with a Target Token and you have played a successful attack, you may remove the Target Token from play to Trigger: Inflict +3 damage.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 15,
+    "PilotId": 5,
+    "Name": "End The Cycle",
+    "Rules": "Kong gains 1 Power Token at the beginning of your turn. At the beginning of your turn you may pay 1 Fighting Spirit to place or move 1 Target Token to any unoccupied hex. Once per turn, if you have not attacked by the end of your turn, gain 1 Power Token.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 16,
+    "PilotId": 6,
+    "Name": "Righteous Fury",
+    "Rules": "Singh's Heart is X, where X = the number of Power Tokens in your Power Token Control. On your opponent's Attacking turn, gain Rage every time your opponent successfully attacks you but does not inflict damage.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 17,
+    "PilotId": 6,
+    "Name": "Zoider Honor",
+    "Rules": "Singh's Heart is X, where X = the number of Power Tokens in your Power Token Control. Whenever your opponent successfully plays an Instant that affects your Attack, or Instant cards in play, gain 1/2 Rage.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 18,
+    "PilotId": 6,
+    "Name": "Battle Hardened",
+    "Rules": "Singh's Heart is X, where X = the number of Power Tokens in your Power Token Control. Permanently increase your Defense by 2.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 19,
+    "PilotId": 7,
+    "Name": "Zoider Terroch",
+    "Rules": "Terroch Arkan can gain Power Tokens as long as there is room in the Power Token Control, even if it exceeds the standard limit of 6. Once per turn you may spend X Power Tokens to increase your Fighting Spirit by X⋅3. You may play any one Robot card by spending 4 Power Tokens.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 20,
+    "PilotId": 7,
+    "Name": "Power Control",
+    "Rules": "Terroch Arkan can gain Power Tokens as long as there is room in the Power Token Control, even if it exceeds the standard limit of 6. Once per turn you may spend X Power Tokens to increase your Fighting Spirit by X⋅3. When you deactivate a robot ability, you immediately gain Power Tokens equal to that ability's cost -1.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  },
+  {
+    "Id": 21,
+    "PilotId": 7,
+    "Name": "Zoider Supremecy",
+    "Rules": "Terroch Arkan can gain Power Tokens as long as there is room in the Power Token Control, even if it exceeds the standard limit of 6. Once per turn you may spend X Power Tokens to increase your Fighting Spirit by X⋅3. You gain +1 Power Token immediately after an opponent uses a Power Die or gains a Power Token.",
+    "MainArtImage": "",
+    "LogoImage": ""
+  }
+]

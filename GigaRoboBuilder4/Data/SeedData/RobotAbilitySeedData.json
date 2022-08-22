@@ -1,0 +1,290 @@
+[
+  {
+    "Id": 1,
+    "RobotId": 1,
+    "Name": "Iron Fusion Stage 1!",
+    "PowerTokens": 1,
+    "Rules": "Decrease all attack damage received by 1 while activated.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 2,
+    "RobotId": 1,
+    "Name": "Iron Fusion Stage 2!",
+    "PowerTokens": 2,
+    "Rules": "(Iron Fusion Stage 1! must be activated) Inflict damage +1 while activated.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 3,
+    "RobotId": 1,
+    "Name": "Iron Fusion Stage 3 - Ayzn Black!",
+    "PowerTokens": 3,
+    "Rules": "(Iron Fusion Stage 2! must be activated) Increase attack roll results by 1 while activated.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 4,
+    "RobotId": 1,
+    "Name": "Detonator Overload",
+    "PowerTokens": 2,
+    "Rules": "While Activated, if your Melee Attack card was successful, you may permanently remove it from the game to Trigger: You may spend X Power Dice to add +X damage to this attack.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 5,
+    "RobotId": 1,
+    "Name": "Titan's Stride",
+    "PowerTokens": 1,
+    "Rules": "While Activated, when you spend your movement, you move through and destroy Structures by receiving 2 Damage. You must always end your movement past the Structure’s hex. Do not resolve the Impact Rules on Impact Cards drawn for Structures destroyed this way.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 6,
+    "RobotId": 1,
+    "Name": "Iron Fusion Override",
+    "PowerTokens": 0,
+    "Rules": "You may receive 1 Fire to Trigger: You may play any “Ayzn Black” cards without having “Iron Fusion Stage 3-Ayzn Black” Activated, until the end of this turn.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 7,
+    "RobotId": 3,
+    "Name": "Thunder Clap",
+    "PowerTokens": 0,
+    "Rules": "Pay 2 Fighting Spirit to move a Power Surge from your Cooldown Meter to this Ability. Remove Six Power Surges on this ability to Trigger: You may play any 1 card for free.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 8,
+    "RobotId": 3,
+    "Name": "Ion Shield",
+    "PowerTokens": 0,
+    "Rules": "Remove 3 Power Surges from your Cooldown Meter to Trigger: Create 1 Barrier.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 9,
+    "RobotId": 3,
+    "Name": "Double Dagger",
+    "PowerTokens": 3,
+    "Rules": "While Activated, you may re-roll your unsuccessful Melee attack rolls once.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 10,
+    "RobotId": 3,
+    "Name": "Storm of Strikes",
+    "PowerTokens": 2,
+    "Rules": "WHILE ACTIVATED, YOU MAY REMOVE 1 POWER SURGE FROM YOUR \nCOOLDOWN METER DURING ANY OPPONENT’S COOLDOWN PHASE TO \nTRIGGER: DECREASE your COMBO CARDs BY 1 cooldown slot.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 11,
+    "RobotId": 3,
+    "Name": "Arc Wing",
+    "PowerTokens": 1,
+    "Rules": "While Activated, gain Boost.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 12,
+    "RobotId": 3,
+    "Name": "Ion Exhaust",
+    "PowerTokens": 0,
+    "Rules": "Spend 2 Power Token to Trigger: Remove all Power Surges from your Cooldown Meter.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 13,
+    "RobotId": 2,
+    "Name": "Chogoking Sabre",
+    "PowerTokens": 2,
+    "Rules": "While Activated, Increase the Maximum Range of your Melee Attacks by 1.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 14,
+    "RobotId": 2,
+    "Name": "Phoenix Wing Reborn",
+    "PowerTokens": 0,
+    "Rules": "If “Chogoking Sabre” is Activated, you may Deactivate it to Trigger: Gain Boost until the end of this turn.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 15,
+    "RobotId": 2,
+    "Name": "Blazing Aegis",
+    "PowerTokens": 3,
+    "Rules": "While Activated, if you are adjacent to an opponent at the end of their turn, Trigger: Inflict 1 Fire to all Adjacent opponents",
+    "LogoImage": ""
+  },
+  {
+    "Id": 16,
+    "RobotId": 2,
+    "Name": "Trace Burn",
+    "PowerTokens": 1,
+    "Rules": "While Activated, whenever you receive Fire, increase the amount by 1.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 17,
+    "RobotId": 2,
+    "Name": "Aegis Fire",
+    "PowerTokens": 2,
+    "Rules": "While Activated, increase your Defense by 1.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 18,
+    "RobotId": 2,
+    "Name": "Magma Breach",
+    "PowerTokens": 2,
+    "Rules": "While Activated, gain 1 Power Token whenever you receive Fire damage",
+    "LogoImage": ""
+  },
+  {
+    "Id": 19,
+    "RobotId": 4,
+    "Name": "Anchor Shield",
+    "PowerTokens": 0,
+    "Rules": "When damage is Inflicted to you, you may pay 2 Fighting Spirit to place any 1 card that inflicts Anchors into Cooldown, Deactivated, to Trigger: Reduce Inflicted by 3.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 20,
+    "RobotId": 4,
+    "Name": "Burst Anchor",
+    "PowerTokens": 0,
+    "Rules": "While you are the Active Player, whenever you are adjacent to an Anchored  hex, you may PAY 3 Power Tokens to Trigger: LEAP to any hex adjacent to any Anchored hex.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 21,
+    "RobotId": 4,
+    "Name": "Star Spanner Sacrifice",
+    "PowerTokens": 0,
+    "Rules": "If “Star Spanner” is Activated, you may Deactivate it  and pay X Fighting Spirit to \nTrigger: reduce damage inflicted to you by your Opponent’s Ranged Attack by X.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 22,
+    "RobotId": 4,
+    "Name": "Star Spanner",
+    "PowerTokens": 1,
+    "Rules": "While Activated, your Melee Attack Cards inflict +1 damage.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 23,
+    "RobotId": 4,
+    "Name": "Cosmos Shield",
+    "PowerTokens": 0,
+    "Rules": "You may spend 2 Power Tokens to Trigger: Create 1 Barrier.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 24,
+    "RobotId": 4,
+    "Name": "Sky Anchor Overload",
+    "PowerTokens": 0,
+    "Rules": "Spend 3 Power Tokens to trigger: All Anchors inflict 3 damage and are then destroyed.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 25,
+    "RobotId": 5,
+    "Name": "Heart Of The Wolf",
+    "PowerTokens": 0,
+    "Rules": "Spend 2 Power Tokens to Trigger: X=the amount of Panic in your Cooldown Meter. Gain  X⋅2 Fighting Spirit.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 26,
+    "RobotId": 5,
+    "Name": "Leap Of The Wolf",
+    "PowerTokens": 0,
+    "Rules": "Pay 3 Fighting Spirit and remove 1 Panic from your Cooldown Meter to Trigger: You may Leap 1 hex even if you have already spent your movement this turn.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 27,
+    "RobotId": 5,
+    "Name": "Jaws Of The Wolf",
+    "PowerTokens": 3,
+    "Rules": "While Activated, you may replace the Rules Text of a Fang Attack Card with the rules text of any other Fang Attack  Card in your Cooldown Meter.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 28,
+    "RobotId": 5,
+    "Name": "Bite Of The Wolf",
+    "PowerTokens": 0,
+    "Rules": "Once per attack, you may gain 1 Panic to Trigger: Reroll your unsuccessful Fang attack.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 29,
+    "RobotId": 5,
+    "Name": "Hunger Of The Wolf",
+    "PowerTokens": 2,
+    "Rules": "While Activated, when you start your turn with Combat Advantage increase your Speed by 2.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 30,
+    "RobotId": 5,
+    "Name": "Wolfsbane",
+    "PowerTokens": 1,
+    "Rules": "While Activated, once per turn you may spend 1 Power Token to Trigger: Create 1 Barrier.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 31,
+    "RobotId": 6,
+    "Name": "Rocket Sprint",
+    "PowerTokens": 1,
+    "Rules": "While Activated, on your Active Turn you may spend X Power TOKENS\nto TRIGGER: move X hexes, even if you have already spent your movement this turn.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 32,
+    "RobotId": 6,
+    "Name": "Sniper's Perch",
+    "PowerTokens": 3,
+    "Rules": "While Activated, whenever you have Combat Advantage add 2 Attack Dice to your Attack Roll instead of 1.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 33,
+    "RobotId": 6,
+    "Name": "Cover Shooter",
+    "PowerTokens": 1,
+    "Rules": "While Activated, whenever you’re in Cover, add 1 Defense Die to your Attack Rolls, treating it as a 10-sided Attack Die.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 34,
+    "RobotId": 6,
+    "Name": "Bullet Hell",
+    "PowerTokens": 0,
+    "Rules": "Spend 5 Power Tokens to Trigger: All of your Ranged Attack Cards Gain the Combo subtype until the end of this turn",
+    "LogoImage": ""
+  },
+  {
+    "Id": 35,
+    "RobotId": 6,
+    "Name": "Spotter",
+    "PowerTokens": 0,
+    "Rules": "Spend 3 Power Tokens to Trigger: All of your Attack Die results are increased by 1 until the end of this turn.",
+    "LogoImage": ""
+  },
+  {
+    "Id": 36,
+    "RobotId": 6,
+    "Name": "Sniper Gust",
+    "PowerTokens": 0,
+    "Rules": "Spend 1 Power Token to Trigger: Gain Boost until the end of this turn.",
+    "LogoImage": ""
+  }
+]
