@@ -1,4 +1,4 @@
-import React, {cloneElement, useState} from "react";
+import React, {cloneElement, useEffect, useState} from "react";
 import Constants from "./utilities/Constants";
 
 
@@ -32,7 +32,6 @@ const [robots, setRobots] = useState([]);
           <div className="mt-5">
             <button onClick={getRobots} className='btn btn-dark btn-lg w-100'>Get Robots From Server</button>
           </div>          
-
           {robots.length > 0 && renderRobots()}
         </div>
       </div>
@@ -69,35 +68,11 @@ const [robots, setRobots] = useState([]);
 function renderRobots()
 {
   return (
-    <div className="table-responsive mt-5">
-      <table className="table table-bordered border-dark">
-        <thead>
-          <tr>
-            <th scope='col'>Robot Id (PK)</th>
-            <th scope='col'>Robot Name</th>
-            <th scope='col'>Robot Speed</th>
-            <th scope='col'>Robot Defence</th>
-            <th scope='col'>Robot Max Armour</th>
-          </tr>
-        </thead>
-        <tbody>
-        {robots.map((robot) => (
-          <tr key={robot.id}>
-            <th scope="row">{robot.id}</th>
-            <td>{robot.name}</td>
-            <td>{robot.speed}</td>
-            <td>{robot.defence}</td>
-            <td>{robot.maxArmour}</td>
-          </tr>
+    <div>
+      {robots.map((robot) => (
+              <button className='btn btn-primary px-2'>{robot.name}</button>
         ))}
-        </tbody>
-      </table>
-
-
-
-      <button onClick={() => setRobots([])} className='btn btn-dark brn-lg w-100'>Empty Robot Array</button>
     </div>
-
   );
 }
 }
