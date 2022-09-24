@@ -1,25 +1,81 @@
 import React, {cloneElement, useEffect, useState} from "react";
+import RobotPicker from "./Components/RobotPicker";
 import Constants from "./utilities/Constants";
+import PilotPicker from "./Components/PilotPicker";
 
 
 export default function App() {
 const [robots, setRobots] = useState([]);
+const [pilots, setPilots] = useState([]);
+const [pilotAbilities, setPilotAbilities] = useState([]);
 
-  function getRobots() {
-    const url = Constants.API_URL_GET_ALL_ROBOTS;
-    fetch(url, {
-      method: 'GET'
-    })
-    .then(response => response.json())
-    .then(robotsFromServer => {
+
+  useEffect(() => {
+    const getRobots = async () => 
+    {
+      const robotsFromServer = await fetchRobots();
       console.log(robotsFromServer);
       setRobots(robotsFromServer);
+    }
+
+    const getPilots = async () => 
+    {
+      const pilotsFromServer = await fetchPilots();
+      console.log(pilotsFromServer);
+      setPilots(pilotsFromServer);
+    }
+
+    getRobots();
+    getPilots();
+  }, [])
+
+  const fetchRobots= async() => {
+    const url = Constants.API_URL_GET_ALL_ROBOTS;
+    const res = await fetch(url, {
+        method: 'GET'
     })
+    const data = await res.json()
     .catch((error) => {
       console.log(error);
       alert(error);
     });
     
+    return data;
+  }
+
+  const fetchPilots= async() => {
+    const url = Constants.API_URL_GET_ALL_PILOTS;
+    const res = await fetch(url, {
+        method: 'GET'
+    })
+    const data = await res.json()
+    .catch((error) => {
+      console.log(error);
+      alert(error);
+    });
+    
+    return data;
+  }
+
+  const fetchPilotAbilitiesByPilot= async(pilotId) => {
+    const url = Constants.API_URL_GET_PILOT_ABILITIES_BY_PILOT + "/" + pilotId;
+    const res = await fetch(url, {
+        method: 'GET'
+    })
+    const data = await res.json()
+    .catch((error) => {
+      console.log(error);
+      alert(error);
+    });
+    
+    console.log(data);
+    setPilotAbilities(data);
+  }
+
+
+  const selectPilot = async (pilotId) => 
+  {
+    console.log(pilotId);
   }
 
   return (
@@ -27,21 +83,31 @@ const [robots, setRobots] = useState([]);
       <div className="row min-vh-100 ">
         <div className="col d-flex flex-column justify-content-center align-items-center">
           <div>
-            <h1>List of Robots</h1>
+            <h1>Choose your Robot</h1>
           </div>
-          <div className="mt-5">
-            <button onClick={getRobots} className='btn btn-dark btn-lg w-100'>Get Robots From Server</button>
-          </div>          
-          {robots.length > 0 && renderRobots()}
+          {robots.length > 0 ? (<RobotPicker robots={robots}/>) : ('No Robots from server')}
+          <div>
+            <h1>Choose your Pilot</h1>
+          </div>         
+          {pilots.length > 0 ? (<PilotPicker pilots={pilots} pilotSelected={selectPilot}/>) : ('No Pilots from server')}
+          <button onClick={() => fetchPilotAbilitiesByPilot(1)}>Test Get Pilot by ID 1</button>
         </div>
+          
       </div>
+
+
+
+
+
+
+
       <div>
         <h3>Master To-Do List</h3>
         <p>This will get updated when major changes happen, and serves as a roadmap of what needs to be done. When things are more functional, this will live in the readme on github</p>
         <h4>Site Functionallity</h4>
         <ul>
-          <li>Make Robot Buttons</li>
-          <li>Make Pilot Buttons</li>
+          <li><del>Make Robot Buttons</del></li>
+          <li><del>Make Pilot Buttons</del></li>
           <li>Get Abilities and cards to show up when buttons are pressed</li>
           <li>Make abilities and cards get added to a user build section when clicked</li>
           <li>save completed builds in database</li>
@@ -62,17 +128,4 @@ const [robots, setRobots] = useState([]);
       </div>
     </div>
   );
-
-
-
-function renderRobots()
-{
-  return (
-    <div>
-      {robots.map((robot) => (
-              <button className='btn btn-primary px-2'>{robot.name}</button>
-        ))}
-    </div>
-  );
-}
 }

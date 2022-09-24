@@ -228,7 +228,7 @@ app.MapGet("/getPilotAbilityById/{pilotAbilityId}", async (int pilotAbilityId) =
 }).WithTags("Pilot Ability Endpoints");
 
 
-app.MapGet("/getPilotAbilitiesByRobot/{pilotId}", async (int pilotId) =>
+app.MapGet("/getPilotAbilitiesByPilot/{pilotId}", async (int pilotId) =>
 {
     var pilotAbilityList = await PilotAbilityRepository.GetPilotAbilitiesByPilotIdAsync(pilotId);
 
