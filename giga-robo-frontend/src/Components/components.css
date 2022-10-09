@@ -1,0 +1,44 @@
+.scrollmenu {
+    height: 150px;
+    overflow-y: auto;
+  }
+
+  .scrollmenuRobotCards {
+    height: 450px;
+    overflow-y: auto;
+  }
+
+  .pilotAbilityCards {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  .robotAbilityCards {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+
+  }
+
+  .robotCards {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+
+  }
+
+  .pilotCards {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+
+  }
