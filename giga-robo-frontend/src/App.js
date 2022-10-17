@@ -303,7 +303,7 @@ let filteredPilotCards = pilotCards.filter((pilotCard) => {
           <li>Create User Build Section</li>
           <li>Make abilities and cards get added to a user build section when clicked</li>
           <li>save completed builds in database</li>
-          <li>Add tool-tip style card descriptions, netrunner db style</li>
+          <li><del>Add tool-tip style card descriptions, netrunner db style</del></li>
           <li>create client side validation of builds, so that we don't create builds that break the rules</li>
           <li>add a build list page, one for all builds, and one for builds from current user</li>
           <li>create user / password functionality</li>
