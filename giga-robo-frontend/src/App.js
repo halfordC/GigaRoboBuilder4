@@ -7,6 +7,7 @@ import RobotAbilityList from "./Components/RobotAbilityList";
 import { Container, Row, Col } from "reactstrap";
 import RobotCardList from "./Components/RobotCardList";
 import PilotCardList from "./Components/PilotCardList";
+import RobotCardPopOut from "./Components/RobotCardPopOut";
 
 export default function App() {
 const [robots, setRobots] = useState([]);
@@ -17,6 +18,9 @@ const [pilotCards, setPilotCards] = useState([]);
 const [robotCards, setRobotCards] = useState([]);
 let[chosenRobot, setChosenRobot] = useState(0);
 let[chosenPilot, setChosenPilot] = useState(0);
+let[mouseOverRobotCard, setMouseOverRobotCard] = useState(0);
+let[showRobotCardPop, setShowRobotCardPop] = useState(false);
+let[MousePosition, setMousePosition] = useState([0,0]);
 
 let filteredRobotAbilities = robotAbilities.filter((robotAbility) => {
   if(chosenRobot !== 0)//if we have clicked a robot
@@ -36,7 +40,6 @@ let filteredPilotAbilities = pilotAbilities.filter((pilotAbility) => {
   {
     return pilotAbility;
   }
-
 });
 
 let filteredRobotCards = robotCards.filter((robotCard) => {
@@ -57,7 +60,6 @@ let filteredPilotCards = pilotCards.filter((pilotCard) => {
   {
     return pilotCard;
   }
-
 });
 
 
@@ -104,6 +106,7 @@ let filteredPilotCards = pilotCards.filter((pilotCard) => {
       const pilotCardsFromServer = await fetchPilotCards();
       console.log(pilotCardsFromServer);
       setPilotCards(pilotCardsFromServer);
+      
     }
 
     getRobots();
@@ -232,6 +235,25 @@ let filteredPilotCards = pilotCards.filter((pilotCard) => {
     //This is where we want to trigger a filter in our other apps. 
   }
 
+  const mouseOverRobotCardFunc = async (robotCard) =>
+  {
+    console.log(robotCard);
+    console.log("mouse is in");
+    setShowRobotCardPop(true);
+    setMouseOverRobotCard(robotCard);
+  }
+
+  const mouseOutRobotCardFunc = () =>
+  {
+    console.log("mouse is out");
+    setShowRobotCardPop(false);
+  }
+
+  function mouseMove(e)
+  {
+    setMousePosition([e.pageX+5, e.pageY+5]);
+  }
+
   return (
     <div>
       <Container className="gap-3">
@@ -255,12 +277,15 @@ let filteredPilotCards = pilotCards.filter((pilotCard) => {
         </Row>
         <Row className="p-2">
           <Col>
-            {robotCards.length > 0 ? (<RobotCardList robotCards={filteredRobotCards}/>) : ('No Robot Cards from server')}
+            {robotCards.length > 0 ? (<RobotCardList robotCards={filteredRobotCards} robotCardMouseEnter={mouseOverRobotCardFunc} 
+            robotCardMouseLeave={mouseOutRobotCardFunc} robotMouseMove={mouseMove} />) : ('No Robot Cards from server')}
           </Col>
           <Col>
             {pilotCards.length > 0 ? (<PilotCardList pilotCards={filteredPilotCards}/>) : ('No Pilot Cards from server')}
           </Col>
         </Row>
+          {showRobotCardPop === true ? (<RobotCardPopOut robotCard={mouseOverRobotCard} mouseCoords={MousePosition}/>) : (<></>)}
+
 
 
 
