@@ -1,9 +1,10 @@
 import React from 'react'
 import "./components.css"
 
-const RobotAbility = ({robotAbility}) => {
+const RobotAbility = ({robotAbility, onMouseEnterFunc, robotAbilityMouseLeave, mouseMove}) => {
   return (
-    <a className='robotAbilityCards'>{robotAbility.name}</a>
+    <a className='robotAbilityCards' onMouseEnter={() => onMouseEnterFunc(robotAbility)} onMouseLeave={() => robotAbilityMouseLeave()}
+    onMouseMove={mouseMove}>{robotAbility.name}</a>
   )
 }
 
